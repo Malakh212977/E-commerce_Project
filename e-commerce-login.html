@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, noarchive" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mammazon Login</title>
+    <meta property="og:image" content="Assets/logo-outlined.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.imgur.com/FYHBGge.png"
+    />
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="login-styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="navbar">
+      <!-- Logo	-->
+      <div class="logo-container" class="prevent-select">
+        <a href="e-commerce.html" class="no-style">
+          <img
+            src="https://i.imgur.com/FYHBGge.png"
+            alt="Website Logo"
+            class="logo"
+          />
+          <img
+            src="https://i.imgur.com/IgZRCgQ.png"
+            alt="Website Logo"
+            class="logo logo--filled"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation	-->
+      <nav>
+        <ul class="prevent-select nav__menu">
+          <li>
+            <a href="e-commerce.html" class="no-style">Home</a>
+          </li>
+          <li>
+            <a href="#" class="no-style">Shop</a>
+          </li>
+          <li>
+            <a href="#" class="no-style">About</a>
+          </li>
+          <li>
+            <a href="#" class="no-style">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="no-style">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="form-container">
+      <!-- Label -->
+      <input
+        type="radio"
+        name="login-options"
+        value="sign-in"
+        id="sign-in"
+        class="hidden"
+        checked
+      />
+      <label for="sign-in" class="login-tab" role="button">Sign In</label>
+      <input
+        type="radio"
+        name="login-options"
+        value="sign-up"
+        id="sign-up"
+        class="hidden"
+      />
+      <label for="sign-up" class="login-tab" role="button">Sign Up</label>
+
+      <!-- Sign-In -->
+      <section id="sign-in-container">
+        <h2 class="form-heading">Sign In</h2>
+
+        <!-- Form 1	-->
+        <form action="" method="POST">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="user-input"
+            placeholder="Username"
+            required
+            autofocus
+            autocomplete="on"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="user-input"
+            placeholder="Password"
+            required
+            autocomplete="on"
+          />
+          <button type="submit" value="signin" class="login-button">
+            Sign In
+          </button>
+          <p class="form-text">
+            Don't have an account?
+            <label for="sign-up" class="login-tab" role="button"
+              >Sign up here.</label
+            >
+          </p>
+        </form>
+      </section>
+
+      <!-- Sign-Up -->
+      <section id="sign-up-container">
+        <form action="" method="POST">
+          <h2 class="form-heading">Sign Up</h2>
+
+          <!-- Form 2	-->
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            class="user-input"
+            placeholder="Full name"
+            required
+            autocomplete="on"
+            autocapitalize="words"
+          />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="user-input"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="user-input"
+            placeholder="Password"
+            pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+            required
+          />
+          <button type="submit" value="signup" class="login-button">
+            Sign Up
+          </button>
+          <p class="form-text">
+            Already have an account?
+            <label for="sign-in" class="login-tab" role="button"
+              >Sign in here.</label
+            >
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="prevent-select">
+        <span class="bigger">&copy;</span>
+        <span
+          >2024 Mammazon &reg;<span class="bigger">&trade;</span>. All Rights
+          Reserved
+        </span>
+      </p>
+    </footer>
+  </body>
+</html>
